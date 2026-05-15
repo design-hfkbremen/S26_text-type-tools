@@ -14,4 +14,9 @@ Active participation involves the following tasks:
 - attendance for the HfK x HBK exchange 08.–10.06.
 - upload of daily course assignments
 - exhibition preparations & attendance (WED 24.06. / SAT 27.06.)
-- individual project (presentation on WED 24.06., documentation by 09.06.)
+- individual project
+
+## Deadlines
+- presentation on TUE 15.06.
+- exhibition on WED 24.06.
+- documentation by 09.06.
