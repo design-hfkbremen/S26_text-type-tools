@@ -23,6 +23,18 @@ Wie sieht algorithmische Gestaltung aus? Welche Tools prägen unsere Typografie?
 | WED 24.06. | Preparation & Build-Up |
 |  | **Exhibition** |
 | WED 24.06. | 17–20:00 | Vernissage |
-| SAT 26.06. | 12–18:00 | Exhibition |
+| SAT 27.06. | 12–18:00 | Exhibition |
 |  | **Build-Down** |
-| SAT 26.06. | 18:00– | Build-Down |
+| SAT 27.06. | 18:00– | Build-Down |
+
+## To Do
+1. Kommunikation
+   - Poster
+   - Rundmail / Instagram
+2. Ausstellung
+   - Online Poster
+   - Publikation
+   - Licht, Technik, Build-Up / Down 
+4. Organisation
+   - Getränke & Snacks
+   - Aufsichtsschichten
