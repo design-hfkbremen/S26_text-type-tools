@@ -1,20 +1,31 @@
 # Requirements
 
-Attendance during Block B, active and exhibition participation, individual project development. Course input takes place on MO / TUE 10–18:00, additional individual work is expected e.g. on WED 10–16:00. Please also block WED 10.06. for an exchange with HBK Braunschweig, who will visit us 08.–10.06. Exhibition on WED | 24.06. | 18–22:00 and SAT | 27.06. | 13–18:00.
+Attendance during Block B, active and exhibition participation, individual project development & documentation.
 
-## Attendance
+## Times & Dates
+### Course Times
+- MO–TUE | 10–18:00 | Input
+- e.g. WED | 10–16:00 | Individual work
 
-Students are required to attend 80% of sessions. The inputs take place on MO / TUE 10–18:00, in parallel with Block B [18/05–24/06]. Additional individual work is expected e.g. on WED 10–16:00. Therefore, no other sessions should overlap on MO / TUE in Block B. Additionally, being late three times (over 10 minutes late) will be counted as one absence. If you must miss a class, please email me in advance.
+### [HBK x HFK Exchange](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/hfk-hbk.md)
+- MO–WED | 08.–10.06. | 10–18:00
 
-## Active Participation
+### [Exhibition](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/exhibition.md)
+  - WED | 24.06. | 18–22:00
+  - SAT | 27.06. | 13–18:00
 
-Active participation involves the following tasks:
+## Attendance & Active Participation
+
+Students are required to attend 80% of sessions. Being late three times (> 10 min) will be counted as one absence. If you must miss a class, please email me in advance.  
+
+Active participation further involves the following tasks:
 
 - 80% attendance on MO / TUE
 - attendance for the HfK x HBK exchange 08.–10.06.
 - upload of daily course assignments
 - exhibition preparations & attendance (WED 24.06. / SAT 27.06.)
-- individual project
+- individual project & documentation
+
 
 ## Deadlines
 - presentation on TUE 15.06.
