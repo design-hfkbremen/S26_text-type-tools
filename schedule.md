@@ -1,5 +1,18 @@
 # Schedule
 
+## Times & Dates
+### Course times
+- MO–TUE | 10–18:00 | Input
+- e.g. WED | 10–16:00 | Individual work
+
+### [HBKxHFK exchange](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/hfk-hbk.md)
+- MO–WED | 08.–10.06. | 10–18:00
+
+### Exhibition
+  - WED | 24.06. | 18–22:00
+  - SAT | 27.06. | 13–18:00
+ 
+## Schedule
 |  |   **1. Basics [no AI]** |
 | --- | --- |
 | MON 18.05. | Introduction & Typography Basics |
@@ -17,9 +30,12 @@
 |  | **5. Interaction** |
 | MON 15.06. | Poster Sketches |
 | TUE 16.06. | Interactions |
-|  | **6. Exhibition** |
+|  | **6. Exhibition / Build-Up** |
 | MON 22.06. | Preparation & Build-Up |
 | TUE 23.06. | Preparation & Build-Up |
 | WED 24.06. | Preparation & Build-Up |
-| SAT 26.06. | 13–18:00 | Exhibition |
+|  | **6. Exhibition** |
+| WED 24.06. | 17–20:00 | Vernissage |
+| SAT 26.06. | 12–18:00 | Exhibition |
+|  | **6. Exhibition / Build-Down** |
 | SAT 26.06. | 18:00– | Build-Down |
