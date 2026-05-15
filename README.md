@@ -39,7 +39,7 @@ Theoretische Inputs und Texte aus der Designtheorie eröffnen Perspektiven auf g
 2. [Flexbox/Grid](https://codesandbox.io/p/sandbox/ttt-2-layout-h73zvd) 
 
 # Contact
-
+-> via Teams
 - Katharina Nejdl
 - David Wahrenburg [TUE]
 - Paul Stümpel [Exhibition]
