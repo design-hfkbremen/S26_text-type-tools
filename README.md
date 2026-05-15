@@ -2,13 +2,23 @@
 
 ## Links
 
-- Schedule
-- Requirements
-- Exhibition
-- Course Pad
-- Use of AI
-- HBK x HfK Exchange
-- Sign-Up Form
+- [Schedule](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/schedule.md)
+- [Requirements](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/requirements.md)
+- [Sign-Up Form](https://forms.cloud.microsoft/e/DGsz7tUAL9)
+<br>
+
+- [Exhibition | 24. / 27.06.](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/exhibition.md)
+- [HBK x HfK Exchange | 08.–10.06.](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/hfk-hbk.md)
+
+## Coding References
+### References
+- [Cheat Sheet](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/cheat-sheet.md)
+- [Use of AI](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/use-of-ai.md)
+- [Examples](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/examples.md)
+
+### Starter-Kits
+1. [Basic HTML/CSS](https://codesandbox.io/p/sandbox/nervous-yalow-ps86hs)
+2. [Flexbox/Grid](https://codesandbox.io/p/sandbox/ttt-2-layout-h73zvd) 
 
 # Description
 ## Description | EN
@@ -33,13 +43,8 @@ Zusätzlich planen wir noch einen Austausch mit der HBK Braunschweig vom 08.–1
 
 Theoretische Inputs und Texte aus der Designtheorie eröffnen Perspektiven auf gesellschaftliche Fragen unserer typografischen und digitalen Realität. Ziel ist es, die Potenziale von Typografie und Interaktion gestalterisch zu erkunden. Zugleich sollen Phänomene wie systematische Designansätze, Personalisierung und Automatisierung hinterfragt werden, um Gestaltungsmethoden und digitale Technologien nicht nur zu nutzen, sondern kritisch zu reflektieren und mitzugestalten.
 
-# Coding Starter-Kits
-
-1. [Basic HTML/CSS](https://codesandbox.io/p/sandbox/nervous-yalow-ps86hs)
-2. [Flexbox/Grid](https://codesandbox.io/p/sandbox/ttt-2-layout-h73zvd) 
-
 # Contact
--> via Teams
+_→ all communication via Teams_
 - Katharina Nejdl
 - David Wahrenburg [TUE]
 - Paul Stümpel [Exhibition]
