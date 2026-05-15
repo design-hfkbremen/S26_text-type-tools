@@ -13,4 +13,16 @@
 - 27.06.2026 | 12:00–18:00 Uhr | Ausstellung
 
 Wie sieht algorithmische Gestaltung aus? Welche Tools prägen unsere Typografie? Wie werden Poster interaktiv? Der Kurs „Text Type Tools“ bietet einen Einblick in Postergestaltung, digitale Typografie und Web-Technologie (HTML/CSS/JS). Dabei wollen wir gestalterische Prozesse u. a. mithilfe von Code, Algorithmen und Parametern sowohl systematisch als auch experimentell neu denken und umsetzen. Die entstandenen digitalen Poster präsentieren wir nun in dieser Ausstellung. 
-
+ 
+## Schedule
+|  |   **Exhibition** |
+| --- | --- |
+|  | **Build-Up** |
+| MON 22.06. | Preparation & Build-Up |
+| TUE 23.06. | Preparation & Build-Up |
+| WED 24.06. | Preparation & Build-Up |
+|  | **Exhibition** |
+| WED 24.06. | 17–20:00 | Vernissage |
+| SAT 26.06. | 12–18:00 | Exhibition |
+|  | **Build-Down** |
+| SAT 26.06. | 18:00– | Build-Down |
