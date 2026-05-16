@@ -34,7 +34,7 @@ _see_ [_group A_](https://github.com/design-hfkbremen/S26_text-type-tools/blob/m
 
 **Reference:** [Understanding Typography – _Material Design_](https://m2.material.io/design/typography/understanding-typography.html#type-properties)
 
-1. Download the InDesign file
+1. Download the [InDesign file](https://github.com/design-hfkbremen/S26_text-type-tools/tree/main/starter-kits/00_typographic-variations) & fonts
 2. Create 21 typographic variations according to the different parameters
 
 <img width="400" alt="screenshot of indesign" src="https://github.com/user-attachments/assets/e7cd74f2-aa89-48a4-ab2c-b6785f2dba49" />
