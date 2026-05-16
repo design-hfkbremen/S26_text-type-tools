@@ -7,7 +7,7 @@ Let’s discuss how we want to further use coding agents and LLMs together in a 
 
 ## References
 <dl>
-  <dt>ChatGPT</dt>
+  <dt>ChatGPT & Research</dt>
   <dd>
     <a href="https://openai.com/de-DE/index/chatgpt-study-mode" target="_blank">
       [ChatGPT: Study Mode]
