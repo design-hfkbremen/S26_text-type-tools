@@ -4,6 +4,15 @@
 - [add book list] 
 - [Understanding Typography](https://m2.material.io/design/typography/understanding-typography.html#type-properties) – _Material Design_
 
+## Finding typefaces
+- [https://fontsinuse.com/](https://fontsinuse.com/)
+- [Adobe fonts](https://fonts.adobe.com/)
+- [https://open-foundry.com/](https://open-foundry.com/)
+- [Libre fonts by womxn](https://www.design-research.be/by-womxn/)
+- [https://www.flintype.com/](https://www.instagram.com/flint_ype)
+- [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
+- [add list of type foundries]
+
 ## Inspiration
 - [https://100-beste-plakate.de/plakate/](https://100-beste-plakate.de/plakate/)
 - [https://www.typographicposters.com/](https://www.typographicposters.com/)
