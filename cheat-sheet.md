@@ -1,8 +1,15 @@
 # Cheat Sheet
 
 ## Typography
-- [add book list] 
-- [Understanding Typography](https://m2.material.io/design/typography/understanding-typography.html#type-properties) – _Material Design_
+- Books
+  - [https://www.typewolf.com/typography-books](https://www.typewolf.com/typography-books)
+  - [https://thefutur.com/content/typography-design-books](https://thefutur.com/content/typography-design-books)
+- Resources
+  - [https://www.typewolf.com/resources](https://www.typewolf.com/resources)
+- Type Knowledge
+  - [Understanding Typography](https://m2.material.io/design/typography/understanding-typography.html#type-properties) – _Material Design_
+  - [https://typefacts.com/artikel/anfuehrungszeichen](https://typefacts.com/artikel/anfuehrungszeichen)
+
 
 ## Finding typefaces
 - [https://fontsinuse.com/](https://fontsinuse.com/)
