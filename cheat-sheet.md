@@ -1,7 +1,16 @@
 # Cheat Sheet
 
 ## Typography
+- [add book list] 
 - [Understanding Typography](https://m2.material.io/design/typography/understanding-typography.html#type-properties) – _Material Design_
+
+## Inspiration
+- [https://100-beste-plakate.de/plakate/](https://100-beste-plakate.de/plakate/)
+- [https://www.typographicposters.com/](https://www.typographicposters.com/)
+- [https://www.hoverstat.es/](https://www.hoverstat.es/)
+- [https://godly.website/](https://godly.website/)
+- [https://hallointer.net/](https://hallointer.net/)
+- [https://www.instagram.com/loadmo.re/](https://www.instagram.com/loadmo.re/)
 
 ## Tools
 ### InDesign
