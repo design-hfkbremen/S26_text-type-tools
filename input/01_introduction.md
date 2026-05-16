@@ -1,4 +1,4 @@
-# Introduction
+# Introduction | 18.05.
 
 Welcome to Text Type Tools! Let’s get started:
 
@@ -30,7 +30,7 @@ _see_ [_group A_](https://github.com/design-hfkbremen/S26_text-type-tools/blob/m
   - You each make a few versions of the described poster (e.g. w/ marker on A6/7, at least 3 versions).
   - After each version you can check with your partner, refine the description and try again.  
 
-## 13–15:00 | Exercise 2: Typographic Basics
+## 13–14:30 | Exercise 2: Typographic Basics
 
 **Reference:** [Understanding Typography – _Material Design_](https://m2.material.io/design/typography/understanding-typography.html#type-properties)
 
