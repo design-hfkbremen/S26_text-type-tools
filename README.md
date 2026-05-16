@@ -14,7 +14,7 @@
 ### References
 - [Cheat Sheet](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/cheat-sheet.md)
 - [Use of AI](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/use-of-ai.md)
-- [Examples](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/examples.md)
+- [Examples](https://github.com/design-hfkbremen/S26_text-type-tools/tree/main/examples)
 
 ### Starter-Kits
 1. [Basic HTML/CSS](https://codesandbox.io/p/sandbox/nervous-yalow-ps86hs)
