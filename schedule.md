@@ -15,7 +15,7 @@
 ## Schedule
 |  |   **1. Basics [no AI]** |
 | --- | --- |
-| MON 18.05. | [Introduction & Typography Basics](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/introduction.md) |
+| MON 18.05. | [Introduction & Typography Basics](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/01_introduction.md) |
 | TUE 19.05. | HTML / CSS Basics   |
 |  | **2. Layout & Variables [no AI]** |
 | MON 25.05. | [No course – Whit Monday] |
