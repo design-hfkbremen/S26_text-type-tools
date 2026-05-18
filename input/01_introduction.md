@@ -10,8 +10,8 @@ Welcome to Text Type Tools! Let’s get started:
     - `About:` Description, schedule & requirements
     - `Exercise:` Create a web-based poster.
     - `Exhibition:`
-        - WED | 24.06. | 18–22:00
-        - SAT | 27.06. | 13–18:00
+        - WED | 24.06. | 17–20:00
+        - SAT | 27.06. | 12–18:00
 - Tape / Post-Its [15min]
     - Name
     - Experience with typography / code
