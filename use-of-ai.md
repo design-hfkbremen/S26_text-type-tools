@@ -19,10 +19,18 @@ Let’s discuss how we want to further use coding agents and LLMs together in a 
     <a href="https://hbr.org/2025/05/research-gen-ai-makes-people-more-productive-and-less-motivated"
       target="_blank">
       [Research: Gen AI Makes People More Productive and Less Motivated]</a>
+    <br>
+    <a href="https://hbr.org/2025/05/research-gen-ai-makes-people-more-productive-and-less-motivated"
+      target="_blank">
+    [Research: Why Your AI Keeps Building the Same Purple Gradient Website]</a>
+    <br>
+    <a href="https://archive.ph/2vjJm"
+      target="_blank">
+    [Research: Software Developers Say AI Is Rotting Their Brains]</a>
   </dd>
 </dl>
 <details class="note">
-  <summary class="note">Tips for using ChatGPT for coding support</summary>
+  <summary class="note">Tips for using LLMs for coding support</summary>
   <ol>
     <li>Learn the basics first – without ChatGPT.
       <small>You can only evaluate generated code, if you can read and
