@@ -31,6 +31,10 @@ Let’s discuss how we want to further use coding agents and LLMs together in a 
     <a href="https://www.reclam.de/produktdetail/kuenstliche-intelligenz-und-der-neue-faschismus-9783150146668"
       target="_blank">
     [Research: Künstliche Intelligenz und der neue Faschismus]</a>
+        <br>
+    <a href="https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/"
+      target="_blank">
+    [Example: How to Build a Low-tech Website?]</a>
   </dd>
 </dl>
 <details class="note">
