@@ -16,16 +16,16 @@
 |  |   **1. Basics [no AI]** |
 | --- | --- |
 | MON 18.05. | [Introduction & Typography Basics](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/introduction.md) |
-| THU 19.05. | HTML / CSS Basics   |
+| TUE 19.05. | HTML / CSS Basics   |
 |  | **2. Layout & Variables [no AI]** |
 | MON 26.05. | [No course – Whit Monday] |
-| THU 27.05. | CSS Grid & Flexbox |
+| TUE 27.05. | CSS Grid & Flexbox |
 |  | **3. Animation** |
 | MON 01.06. | Poster Sketches |
-| THU 02.06. | Animation Fun |
+| TUE 02.06. | Animation Fun |
 |  | **4. HBK x HfK Exchange** |
 | MON 08.06. | Exchange w/ HBK Braunschweig |
-| THU 09.06. | Exchange w/ HBK Braunschweig |
+| TUE 09.06. | Exchange w/ HBK Braunschweig |
 | WED 09.06. | Exchange w/ HBK Braunschweig |
 |  | **5. Interaction** |
 | MON 15.06. | Poster Sketches |
