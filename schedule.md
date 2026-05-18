@@ -18,8 +18,8 @@
 | MON 18.05. | [Introduction & Typography Basics](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/introduction.md) |
 | TUE 19.05. | HTML / CSS Basics   |
 |  | **2. Layout & Variables [no AI]** |
-| MON 26.05. | [No course – Whit Monday] |
-| TUE 27.05. | CSS Grid & Flexbox |
+| MON 25.05. | [No course – Whit Monday] |
+| TUE 26.05. | CSS Grid & Flexbox |
 |  | **3. Animation** |
 | MON 01.06. | Poster Sketches |
 | TUE 02.06. | Animation Fun |
