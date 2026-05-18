@@ -27,6 +27,10 @@ Let’s discuss how we want to further use coding agents and LLMs together in a 
     <a href="https://archive.ph/2vjJm"
       target="_blank">
     [Research: Software Developers Say AI Is Rotting Their Brains]</a>
+    <br>
+    <a href="https://www.reclam.de/produktdetail/kuenstliche-intelligenz-und-der-neue-faschismus-9783150146668"
+      target="_blank">
+    [Research: Künstliche Intelligenz und der neue Faschismus]</a>
   </dd>
 </dl>
 <details class="note">
