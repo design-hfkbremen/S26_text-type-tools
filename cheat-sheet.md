@@ -62,7 +62,9 @@
     <a href="https://youtu.be/BUZIaTHm_oE" target="_blank">[Video: Basics of CSS by Laurel
       Schwulst]</a><br>
     <a href="https://www.codecademy.com/learn/learn-css" target="_blank">[CodeAcademy: Learn CSS
-      tutorial]</a>
+      tutorial]</a><br>
+    <a href="https://www.geeksforgeeks.org/css/css-text-formatting/" target="_blank">[GeeksForGeeks: CSS Text Formatting]</a>
+  
   </dd>
 </dl>
 <dl>
