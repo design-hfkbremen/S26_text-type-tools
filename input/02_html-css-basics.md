@@ -51,3 +51,12 @@ _Week 1 – Tuesday – David_
 - code-Element
 	- background-color
 	- border-radius
+
+# Aufgabe
+- Sucht euch eins eurer gestalteten Plakate von gestern aus und versucht es in HTML und CSS nachzubauen
+- Begrenzt euch auf Text und Form und testet unterschiedliche CSS Properties aus – Das Poster muss nicht 1 zu 1 entsprechen
+
+Könnte nützlich sein:
+- viewport width (vw) / viewport height (vh)
+- 
+  
