@@ -4,6 +4,10 @@ To teach you the basics of coding, we want to refrain the use of AI for the firs
 
 Let’s discuss how we want to further use coding agents and LLMs together in a shared code of conduct [link coming soon].
 
+### Alternative LLMs
+
+- https://lumo.proton.me/guest
+- 
 
 ## References
 <dl>
