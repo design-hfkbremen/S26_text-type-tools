@@ -27,7 +27,6 @@
 - [https://godly.website/](https://godly.website/)
 - [https://hallointer.net/](https://hallointer.net/)
 - [https://www.instagram.com/loadmo.re/](https://www.instagram.com/loadmo.re/)
-- [https://themovingposter.com](https://themovingposter.com)
 
 ## Tools
 ### InDesign
