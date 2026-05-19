@@ -19,33 +19,32 @@ _Week 1 – Tuesday – David_
 - title
 ### Semantic Elements in `<body>`
 - Block Elements
-	- h1
-	- p
-	- small
-	- nav
-	- main
-	- div
-		- Nesting: div in div
+	- `h1`
+	- `p`
+	- `small`
+	- `nav`
+	- `main`
+	- `div`
 	- …
 - Inline-Elements:
-	- span
-	- i
-	- b
-	- code
+	- `span`
+	- `i`
+	- `b`
+	- `code`
 	- …
 ### Elements and their classes
 - First CSS-Rules: body
 	- link stylesheet to html
 - Styling Text
-	- font-family
-	- font-weight
-	- font-size
-	- color
+	- `font-family`
+	- `font-weight`
+	- `font-size`
+	- `color`
 - Box-Model
-	- Widtg, Height and Units
-		- vw / vh
-		- px
-		- %
+	- `width`, `height` and Units
+		- `vw` / `vh`
+		- `px`
+		- `%`
 	- Border and Transparency
 	- Circle with border-radius
 	- Verschachteltes Box-Styling
