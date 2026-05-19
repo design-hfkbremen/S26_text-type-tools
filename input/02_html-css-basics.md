@@ -58,5 +58,6 @@ _Week 1 – Tuesday – David_
 
 Könnte nützlich sein:
 - viewport width (vw) / viewport height (vh)
-- 
+- Erstmal den ganzen Text reinkopieren und dann versuchen ihn in unterschiedliche Elemente zu unterteilen
+- Tipp: Ein Einzug kann mit einem `<span class="indent">` und `.indent{padding-left: 20px}` gesetzt werden
   
