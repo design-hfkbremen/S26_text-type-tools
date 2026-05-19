@@ -21,7 +21,6 @@ _Week 1 – Tuesday – David_
 - Block Elements
 	- `h1`
 	- `p`
-	- `small`
 	- `nav`
 	- `main`
 	- `div`
@@ -31,6 +30,7 @@ _Week 1 – Tuesday – David_
 	- `i`
 	- `b`
 	- `code`
+    - `small`
 	- …
 ### Elements and their classes
 - First CSS-Rules: body
