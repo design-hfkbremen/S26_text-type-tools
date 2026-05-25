@@ -30,7 +30,7 @@ Now rebuild your letter in HTML / CSS.
 - [Jack Halten Fahnestock – TINY](https://velvetyne.fr/fonts/tiny/)
 
 # CSS Flexbox & Grid
-### Constructing a poster w/ modules | 11–12:00 
+### Constructing a poster w/ modules | 13–13:30 
 - What’s the title of your poster?
 - Create modules, a grid or a stencil. You can find grids in geometry or in your environment (print, web, architecture, nature, etc.).
 - Create the title from these modules or grids. You can alter size, rotation, position of your modules to create a typographic layout.
@@ -40,8 +40,8 @@ Josef Müller-Brockmann, Grid Systems in Graphic Design, 1981
 
 
 ## CSS Flexbox & Grid
+→ [Starter-Kit](https://codesandbox.io/p/sandbox/ttt-2-layout-h73zvd)
 ### Flexbox
-- [Starter-Kit](https://codesandbox.io/p/sandbox/ttt-2-layout-h73zvd)
 - [[Video: CSS Flexbox](https://www.youtube.com/watch?v=phWxA89Dy94)]
 - [[References: A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)]
 - [[Game: Flexbox Froggy](https://flexboxfroggy.com/#de)]
