@@ -17,7 +17,8 @@ Reference: <a href="https://www.moma.org/collection/works/2724" target="blank">
 </a>
 
 ## CSS Positioning | 11–12:00
-[[Video: CSS Positioning](https://www.youtube.com/watch?v=jx5jmI0UlXU)]
+- [[Video: CSS Positioning](https://www.youtube.com/watch?v=jx5jmI0UlXU)]
+- [[Interactive Guide: CSS Positioning](https://ishadeed.com/article/learn-css-positioning)]
 
 Now rebuild your letter in HTML / CSS. 
 
@@ -30,15 +31,6 @@ Now rebuild your letter in HTML / CSS.
 - [Jack Halten Fahnestock – TINY](https://velvetyne.fr/fonts/tiny/)
 
 # CSS Flexbox & Grid
-### Constructing a poster w/ modules | 13–13:30 
-- What’s the title of your poster?
-- Create modules, a grid or a stencil. You can find grids in geometry or in your environment (print, web, architecture, nature, etc.).
-- Create the title from these modules or grids. You can alter size, rotation, position of your modules to create a typographic layout.
-
-<img width="500" alt="image" src="https://flexiblevisualsystems.info/wp-content/uploads/2022/01/Brockmann.gif" /><br>
-Josef Müller-Brockmann, Grid Systems in Graphic Design, 1981
-
-
 ## CSS Flexbox & Grid
 → [Starter-Kit](https://codesandbox.io/p/sandbox/ttt-2-layout-h73zvd)
 ### Flexbox
@@ -50,6 +42,14 @@ Josef Müller-Brockmann, Grid Systems in Graphic Design, 1981
 - [[Video: CSS Grid](https://www.youtube.com/watch?v=EiNiSFIPIQE&t=18s)]
 - [[References: CSS Grid](https://css-tricks.com/complete-guide-css-grid-layout/)]
 - [[Game: CSS Grid Garden](https://cssgridgarden.com/#de)]
+
+## Constructing a poster w/ modules | 13–13:30 
+- What’s the title of your poster?
+- Create modules, a grid or a stencil. You can find grids in geometry or in your environment (print, web, architecture, nature, etc.).
+- Create the title from these modules or grids. You can alter size, rotation, position of your modules to create a typographic layout.
+
+<img width="500" alt="image" src="https://flexiblevisualsystems.info/wp-content/uploads/2022/01/Brockmann.gif" /><br>
+Josef Müller-Brockmann, Grid Systems in Graphic Design, 1981
 
 ## References
 - [[Video: Responsive Mondrian](https://www.youtube.com/watch?v=qNtJ5p3h2A4)]
