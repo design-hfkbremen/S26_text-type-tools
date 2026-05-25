@@ -43,7 +43,10 @@ Now rebuild your letter in HTML / CSS.
 - [[References: CSS Grid](https://css-tricks.com/complete-guide-css-grid-layout/)]
 - [[Game: CSS Grid Garden](https://cssgridgarden.com/#de)]
 
-## Constructing a poster w/ modules | 13–13:30 
+## Constructing a poster w/ grids & modules | 13–13:30 
+- Recreate your letter in CSS Flexbox / Grid.
+
+_Alternatively:_
 - What’s the title of your poster?
 - Create modules, a grid or a stencil. You can find grids in geometry or in your environment (print, web, architecture, nature, etc.).
 - Create the title from these modules or grids. You can alter size, rotation, position of your modules to create a typographic layout.
