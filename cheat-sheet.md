@@ -83,6 +83,7 @@
   <dt>CSS Positioning</dt>
   <dd>
     <a href="https://www.youtube.com/watch?v=jx5jmI0UlXU" target="_blank">[Video: CSS Positioning]</a><br>
+    <a href="https://ishadeed.com/article/learn-css-positioning/" target="_blank">[Interactive Guide: CSS Positioning]</a><br>
   </dd>
   <dt>CSS Flexbox</dt>
   <dd>
