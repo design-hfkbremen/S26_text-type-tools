@@ -18,6 +18,7 @@
 - [Libre fonts by womxn](https://www.design-research.be/by-womxn/)
 - [https://www.flintype.com/](https://www.instagram.com/flint_ype)
 - [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
+- [Use & Modifay -> Free open source fonts](https://usemodify.com)
 - [add list of type foundries]
 
 ## Inspiration
