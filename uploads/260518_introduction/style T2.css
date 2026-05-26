@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{font-family: "Suisse Works", Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+ul{
+    text-align: right;
+}
+
+.text li:nth-child(1) { font-size: 14px; }
+.text li:nth-child(2) { font-size: 20px; }
+.text li:nth-child(3) { font-size: 30px; }
+.text li:nth-child(4) { font-size: 40px; }
+.text li:nth-child(5) { font-size: 50px; }
+.text li:nth-child(6) { font-size: 60px; }
+.text li:nth-child(7) { font-size: 60px; }
+.text li:nth-child(8) { font-size: 70px; }
+.text li:nth-child(9) { font-size: 60px; }
+.text li:nth-child(10) { font-size: 90px; }
+.text li:nth-child(11) { font-size: 120px; }
