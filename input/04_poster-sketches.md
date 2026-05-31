@@ -15,7 +15,7 @@
   - quotes [[1](https://www.typografie.info/3/typografie_zitate/), [2](https://www.typolexikon.de/page_category/zitate/), [3](https://platt.edu/blog/inspirational-quotes-from-women-designers/), [4](https://typografie-debatte.de/), [5](https://typomanifest.de/), [6](https://www.instagram.com/thecreativeindependent/?hl=en)]
   - a protest poster [see [Mut zur Wut](https://mutzurwut.com/), [Plakate gegen Rechts](https://verlagegegenrechts.de/plakate-gegen-rechts)]
  
- 1. What are you designing a poster for?
+ 1. What are you designing a (typographic) poster for?
  2. What text is on your poster?
  3. Which text hierarchies do you have? (title, subtitle, info, website, logo)
 
