@@ -21,7 +21,7 @@
 | MON 25.05. | [No course – Whit Monday] |
 | TUE 26.05. | [CSS Grid & Flexbox](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/03_grid-flexbox.md) |
 |  | **3. Animation** |
-| MON 01.06. | Poster Sketches |
+| MON 01.06. | [Poster Sketches](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/04_poster-sketches.md) |
 | TUE 02.06. | Animation Fun |
 |  | **4. HBK x HfK Exchange** |
 | MON 08.06. | Exchange w/ HBK Braunschweig |
