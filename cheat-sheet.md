@@ -65,7 +65,10 @@
     <a href="https://www.codecademy.com/learn/learn-css" target="_blank">[CodeAcademy: Learn CSS
       tutorial]</a><br>
     <a href="https://www.geeksforgeeks.org/css/css-text-formatting/" target="_blank">[GeeksForGeeks: CSS Text Formatting]</a><br/>
-  <a href="https://www.w3schools.com/cssref/atrule_font-face.php" target="_blank">[W3Schools Fonts einbinden]</a>
+  <a href="https://www.w3schools.com/cssref/atrule_font-face.php" target="_blank">[W3Schools Fonts einbinden]</a><br>
+    <a href="https://web.dev/learn/css/typography">[CSS Typography]</a><br>
+    <a href="https://www.joshwcomeau.com/css/transforms/">[CSS Transformations]</a><br>
+    <a href="https://3dtransforms.desandro.com/">[CSS 3D Transform]</a>
   </dd>
 </dl>
 <dl>
