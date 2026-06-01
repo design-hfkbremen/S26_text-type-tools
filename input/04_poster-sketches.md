@@ -2,6 +2,7 @@
 
 ## Admin
 - 08.–10.06. | HBK x HfK
+- Hilfe bei Aufnahmeprüfung MO (15.6.) – MI (17.6.) > Liste an Lina & Franzi (Name, Kontakt, Zeiten)
 
 ## Poster Text [10:15–11:45]
 - Last exhibition / concert
