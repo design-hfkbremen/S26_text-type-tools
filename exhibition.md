@@ -27,6 +27,31 @@ Wie sieht algorithmische Gestaltung aus? Welche Tools prägen unsere Typografie?
 |  | **Build-Down** |
 | SAT 27.06. | 18:00– | Build-Down |
 
+## Aufbau
+1. Digitale Poster > iMac + Beamer
+2. Index-Website w/ linking to all posters > Flyer + QR-Code
+3. Exercises > Videos + Displays
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/bbcb8305-9de2-49db-9e8d-ad6c2a1400b4" />
+
+
+## Graphical Elements
+- Index-Website
+- Flyer
+- Exhibition Poster
+- Background for Videos
+
+## Delivering
+- Code
+- Screenshots?
+- Elements?
+
+## Aufbau
+- iMac + Maus auf Podest + Beamer
+- 3-5 Bildschirme + Mediaplayer
+- Flyer + QR-Code (colored paper?)
+- Kühlschrank (Drinks)
+
 ## To Do
 1. Kommunikation
    - Poster
