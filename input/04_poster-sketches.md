@@ -6,8 +6,8 @@
 
 ## Poster Text [10:15–11:45]
 - Last exhibition / concert
-- TextTypeTool exhibition postes
-  - [TextTypeTool](https://www.hfk-bremen.de/de/veranstaltungen/text-type-tools-vernissage/17053)
+- TextTypeTools exhibition posters
+  - [TextTypeTools](https://www.hfk-bremen.de/de/veranstaltungen/text-type-tools-vernissage/17053)
   - 24.06.2026 | 17:00 Uhr | Vernissage
   - HfK Bremen | Galerie Flut (1.07.010)
 - other, e.g.
@@ -54,7 +54,7 @@
 
 **Interaction**
 1. How can you interact with the poster (scroll, click, hover, voice, gyroscope)?
-2. How does the poster change on interaction (color, size, )?
+2. How does the poster change on interaction / animation (color, size, width)?
 3. What’s the role of the user (explorer, navigator, reader, writer)?
 
 ## Collective Coding [16–18:00]
@@ -62,7 +62,7 @@
 ## Exhibition Planning [13–15:00]
 _see_ [_Exhibition.md_](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/exhibition.md), _w/ Paul Stümpel_
 
-- [TextTypeTool Exhibition](https://www.hfk-bremen.de/de/veranstaltungen/text-type-tools-vernissage/17053)
+- [TextTypeTools Exhibition](https://www.hfk-bremen.de/de/veranstaltungen/text-type-tools-vernissage/17053)
   - Galerie Flut
   - 24.6.2026 | 17:00–20:00 Uhr Eröffnung & Ausstellung
   - 27.6.2026 | 12:00–18:00 Uhr Ausstellung
