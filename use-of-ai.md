@@ -23,7 +23,7 @@ Let’s discuss how we want to further use coding agents and LLMs together in a 
       target="_blank">
       [Research: Gen AI Makes People More Productive and Less Motivated]</a>
     <br>
-    <a href="https://hbr.org/2025/05/research-gen-ai-makes-people-more-productive-and-less-motivated"
+    <a href="https://prg.sh/ramblings/Why-Your-AI-Keeps-Building-the-Same-Purple-Gradient-Website"
       target="_blank">
     [Research: Why Your AI Keeps Building the Same Purple Gradient Website]</a>
     <br>
