@@ -64,3 +64,7 @@ Let’s discuss how we want to further use coding agents and LLMs together in a 
     </li>
   </ol>
 </details>
+
+## Thoughts about vibe coding
+
+[Let’s discuss](https://hfkbremen.sharepoint.com/:w:/s/S26BlockBTextTypeTools/IQDVSmIL7ODMSo9VGdRpfl-2AZVpDM3l9aiuDNqgzuRmd40?e=70CRGo).
