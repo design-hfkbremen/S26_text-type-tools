@@ -16,9 +16,10 @@
 - [Adobe fonts](https://fonts.adobe.com/)
 - [https://open-foundry.com/](https://open-foundry.com/)
 - [Libre fonts by womxn](https://www.design-research.be/by-womxn/)
-- [https://www.flintype.com/](https://www.instagram.com/flint_ype)
+- [FlinType](https://www.instagram.com/flint_ype)
+- [Velvetyne](https://velvetyne.fr/)
 - [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
-- [Use & Modifay -> Free open source fonts](https://usemodify.com)
+- [Use & Modify -> Free open source fonts](https://usemodify.com)
 - [add list of type foundries]
 
 ## Inspiration
