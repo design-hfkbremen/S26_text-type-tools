@@ -28,7 +28,7 @@
 | TUE 09.06. | Exchange w/ HBK Braunschweig |
 | WED 09.06. | Exchange w/ HBK Braunschweig |
 |  | **5. Interaction** |
-| MON 15.06. | Poster Sketches |
+| MON 15.06. | [Poster Sketches](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/input/06_poster-sketched.md) |
 | TUE 16.06. | Interactions |
 |  | **6. [Exhibition](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/exhibition.md) [build-up]** |
 | MON 22.06. | Preparation & Build-Up |
