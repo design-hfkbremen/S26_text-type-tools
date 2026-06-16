@@ -1,0 +1,273 @@
+.p {
+  mix-blend-mode: difference;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@font-face {
+  font-family: GFSDidot-Regular;
+  src: url(GFSDidot-Regular.ttf);
+}
+
+@font-face {
+  font-family: Cavalharitz;
+  src: url(Cavalhatriz.ttf);
+}
+
+* {
+  transform-origin: top left;
+}
+
+body {
+  background-image: url(ascii-art\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.R {
+  font-size: 30vh;
+  position: fixed;
+  animation-name: bounce;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5vw;
+  top: 0vw;
+  transition: all 0.5s ease-in-out;
+
+  animation: R-animation 0.5s linear forwards;
+  animation-play-state: paused;
+}
+
+.R:hover {
+  animation-play-state: running;
+}
+
+.D {
+  font-size: 30vh;
+  position: fixed;
+  animation-name: bounce;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5vw;
+  top: 10vw;
+  transition: all 0.5s ease-in-out;
+  animation: R-animation 0.5s linear forwards;
+  animation-play-state: paused;
+}
+.D:hover {
+  animation-play-state: running;
+}
+
+.M {
+  font-size: 30vh;
+  position: fixed;
+  animation-name: bounce;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5vw;
+  transition: all 0.5s ease-in-out;
+  top: 20vw;
+  animation: M-animation 0.5s linear forwards;
+  animation-play-state: paused;
+}
+.M:hover {
+  animation-play-state: running;
+}
+
+.C {
+  font-size: 30vh;
+  position: fixed;
+  animation-name: bounce;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5vw;
+  transition: all 0.5s ease-in-out;
+  top: 30vw;
+  animation: C-animation 0.5s linear forwards;
+  animation-play-state: paused;
+}
+.C:hover {
+  animation-play-state: running;
+}
+
+.sieben {
+  font-size: 30vh;
+  position: fixed;
+  animation-name: bounce;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 5vw;
+  bottom: 0vw;
+  transition: all 0.5s ease-in-out;
+  animation: sieben-animation 0.5s linear forwards;
+  animation-play-state: paused;
+  transform-origin: bottom left !important;
+}
+.sieben:hover {
+  animation-play-state: running;
+}
+
+.api {
+  font-size: 10vh;
+  position: fixed;
+  animation-name: bounce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5vw;
+  animation: none;
+  top: 0vw;
+}
+
+.ola {
+  font-size: 10vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5vw;
+  animation: none;
+  top: 10vw;
+}
+
+.usi {
+  font-size: 10vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5vw;
+  animation: none;
+  top: 20vw;
+}
+
+.a40 {
+  font-size: 10vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5vw;
+  animation: none;
+  bottom: 15vw;
+}
+
+.punktStrich {
+  font-size: 10vh;
+  position: fixed;
+  animation-name: bounce;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 5vw;
+  bottom: 5vw;
+}
+
+.letters {
+  color: #ffffff;
+}
+
+@keyframes R-animation {
+  from {
+    transform: scaleY(50%);
+  }
+  to {
+    transform: scaleX(900%) scaleY(50%);
+  }
+}
+
+@keyframes M-animation {
+  from {
+    transform: scaleY(50%);
+  }
+  to {
+    transform: scaleX(700%) scaleY(50%);
+  }
+}
+
+@keyframes C-animation {
+  from {
+    transform: scaleY(50%);
+  }
+  to {
+    transform: scaleX(950%) scaleY(50%);
+  }
+}
+
+@keyframes sieben-animation {
+  from {
+    transform: scaleY(50%);
+  }
+  to {
+    transform: scaleX(1000%) scaleY(300%);
+  }
+}
+
+.mobile-notice {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body > *:not(.mobile-notice) {
+    display: none !important;
+  }
+  .mobile-notice {
+    font-family: Cavalharitz;
+    font-size: 4vh;
+    display: block;
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+    height: 100vh;
+  }
+}
+
+figure {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  z-index: 1000;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background: transparent;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
+  mix-blend-mode: difference;
+}
