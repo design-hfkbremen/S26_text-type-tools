@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="container">
+      <div class="human-1">HUMAN</div>
+      <div class="human-2">HUMAN</div>
+      <div class="human-3">HUMAN</div>
+      <div class="human-4">HUMAN</div>
+      <div class="human-5">HUMAN</div>
+      <div class="people people-2">o<-=</div>
+
+      <div class="people people-1">o<-=</div>
+      <div class="people people-3">o<-=</div>
+      <div class="people people-4">o<-=</div>
+      <div class="people people-5">o<-=</div>
+      <div class="people people-6">o<-=</div>
+      <div class="people people-7">o<-=</div>
+      <div class="people people-8">o<-=</div>
+      <div class="people people-9">o<-=</div>
+      <div class="people people-10">o<-=</div>
+    </div>
+    <div class="eye-box">
+      <div class="eyelash eyelash-1">(</div>
+      <div class="eyelash eyelash-2">(</div>
+      <div class="eyelash eyelash-3">(</div>
+      <div class="eyelash eyelash-4">(</div>
+      <div class="eyelash eyelash-5">(</div>
+      <div class="eyelash eyelash-6">(</div>
+      <div class="eyelash eyelash-7">(</div>
+      <div class="eye">
+        o
+        <div class="people people-11">o<-=</div>
+      </div>
+    </div>
+    <!-- <div class="secret-screen">
+      <div class="secret-text h">H</div>
+      <div class="secret-text u">U</div>
+      <div class="secret-text m">M</div>
+      <div class="secret-text a">A</div>
+      <div class="secret-text n">N</div>
+    </div> -->
+    <script>
+      const eyeBox = document.querySelector(".eye-box");
+      const people11 = document.querySelector(".people-11");
+
+      document.addEventListener("mousemove", function (e) {
+        const rect = eyeBox.getBoundingClientRect();
+
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+
+        const dx = e.clientX - centerX;
+        const dy = e.clientY - centerY;
+
+        const angle = Math.atan2(dy, dx);
+
+        const radius = 40;
+
+        const x = Math.cos(angle) * radius;
+        const y = Math.sin(angle) * radius;
+
+        people11.style.left = "50%";
+        people11.style.top = "50%";
+        people11.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scaleY(1.5)`;
+      });
+    </script>
+    <!-- <script>
+      window.addEventListener("wheel", function (e) {
+        if (e.deltaY < 0) {
+          document.body.classList.add("swap-colors");
+        }
+
+        if (e.deltaY > 0) {
+          document.body.classList.remove("swap-colors");
+        }
+      });
+    </script> -->
+    <script>
+      function swapOn() {
+        document.body.classList.add("swap-colors");
+      }
+
+      function swapOff() {
+        document.body.classList.remove("swap-colors");
+      }
+
+      // 电脑
+      window.addEventListener("wheel", function (e) {
+        if (e.deltaY < 0) {
+          swapOn();
+        }
+
+        if (e.deltaY > 0) {
+          swapOff();
+        }
+      });
+
+      // 手机
+      let startY = 0;
+
+      window.addEventListener("touchstart", function (e) {
+        startY = e.touches[0].clientY;
+      });
+
+      window.addEventListener("touchend", function (e) {
+        const endY = e.changedTouches[0].clientY;
+
+        if (endY < startY) {
+          swapOn();
+        }
+
+        if (endY > startY) {
+          swapOff();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+* {
+  /* background-color: rgb(9, 103, 8); */
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: rgb(9, 103, 8);
+  --text: rgb(228, 56, 255);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  font-size: 13vw;
+  line-height: 0.75;
+  height: 100vh;
+  z-index: 1;
+}
+
+.people {
+  position: fixed;
+  font-size: 4vw;
+  writing-mode: vertical-lr;
+  letter-spacing: -1vw;
+  white-space: nowrap;
+  transition: 0.5s;
+  color: rgb(208, 255, 0);
+  z-index: 99;
+}
+
+.human-1,
+.human-2,
+.human-3,
+.human-4,
+.human-5 {
+  font-family: myFont-1;
+  color: var(--text);
+  flex: 1;
+  min-height: 0;
+  transition: 0.5s;
+}
+
+.human-1 {
+  display: flex;
+  transform-origin: left top;
+}
+
+.human-1:hover {
+  /* margin-bottom: 80vh; */
+  flex: 20;
+  transform: scaleX(1.5) scaleY(4);
+  font-family: myFont-2;
+}
+
+.human-5 {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.human-5:hover {
+  width: 80vw;
+}
+.human-5:hover::after {
+  content: "HUMAN";
+  position: absolute;
+  left: 65%;
+  top: 0;
+  transform: scaleX(-1);
+}
+
+.human-3 {
+  display: flex;
+  flex: 1;
+  transition: 0.5s;
+  display: flex;
+}
+
+.human-3:hover {
+  font-family: myFont;
+  font-size: 25vw;
+  color: red;
+  text-shadow:
+    1vw 0 blue,
+    -1vw 0 yellow;
+}
+
+.human-4 {
+  display: flex;
+  flex: 1;
+  transition: 1s;
+}
+
+.human-4:hover {
+  transform: scaleY(-1);
+}
+
+.human-2 {
+  display: flex;
+  flex: 1;
+  transform-origin: left top;
+}
+
+.human-2:hover {
+  transform: scaleX(0.5) scaleY(0.3);
+}
+
+.people-1 {
+  animation: runningman 40s linear 0s infinite;
+}
+
+.people-1:hover {
+  transform: scaleX(1.5) scaleY(2.5);
+}
+
+.people-2 {
+  bottom: 0;
+  animation: runningman 40s linear 2s infinite;
+}
+
+.people-2:hover {
+  width: 80vw;
+}
+.people-2:hover::after {
+  content: "o<-=";
+  position: absolute;
+  left: 1%;
+  top: 0;
+  transform: scaleX(-1);
+}
+
+.people-3 {
+  bottom: 0;
+  animation: runningman 40s linear 4s infinite;
+}
+
+.people-3:hover {
+  color: red;
+  text-shadow:
+    1vw 0 blue,
+    -1vw 0 yellow;
+}
+
+.people-4 {
+  bottom: 0;
+  animation: runningman 40s linear 6s infinite;
+}
+
+.people-4:hover {
+  transform: scaleY(-1);
+}
+
+.people-5 {
+  bottom: 0;
+  animation: runningman 40s linear 8s infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.people-5:hover {
+  transform: scaleX(0.5) scaleY(0.3);
+}
+
+.people-6 {
+  left: 50vw;
+  animation: flyingman 900ms ease-in-out 0s infinite alternate;
+}
+
+.people-6:hover {
+  transform: scaleX(1.5) scaleY(2.5);
+}
+
+.people-7 {
+  left: 55vw;
+  animation: flyingman 850ms ease-in-out 0s infinite alternate;
+}
+
+.people-7:hover {
+  width: 80vw;
+}
+.people-7:hover::after {
+  content: "o<-=";
+  position: absolute;
+  left: 1%;
+  top: 0;
+  transform: scaleX(-1);
+}
+
+.people-8 {
+  left: 60vw;
+  animation: flyingman 800ms ease-in-out 0s infinite alternate;
+}
+
+.people-8:hover {
+  color: red;
+  text-shadow:
+    1vw 0 blue,
+    -1vw 0 yellow;
+}
+
+.people-9 {
+  left: 65vw;
+  animation: flyingman 900ms ease-in-out 0s infinite alternate;
+}
+
+.people-9:hover {
+  transform: scaleY(-1);
+}
+
+.people-10 {
+  left: 70vw;
+  animation: flyingman 1s ease-in-out 0s infinite alternate;
+}
+
+.people-10:hover {
+  transform: scaleX(0.5) scaleY(0.3);
+}
+
+.eye-box {
+  position: fixed;
+  top: 0vw;
+  right: 10vw;
+
+  width: 40vw;
+  height: 40vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eyelash {
+  position: absolute;
+  top: 30%;
+  /* top: 16vh; */
+
+  transform: translateX(-50%);
+
+  color: var(--text);
+
+  font-size: 8vw;
+  line-height: 1;
+
+  pointer-events: none;
+  z-index: 9;
+}
+
+.eyelash-1 {
+  left: 22%;
+  /* top: 17vh; */
+  transform: rotate(-50deg);
+}
+
+.eyelash-2 {
+  left: 30%;
+  transform: rotate(-35deg);
+}
+
+.eyelash-3 {
+  left: 39%;
+  transform: rotate(-30deg);
+}
+.eyelash-4 {
+  left: 48%;
+  transform: rotate(-20deg);
+}
+.eyelash-5 {
+  left: 57%;
+  /* top: 15vh; */
+}
+.eyelash-6 {
+  left: 63%;
+  transform: rotate(30deg);
+}
+.eyelash-7 {
+  left: 70%;
+  transform: rotate(40deg);
+}
+.eye {
+  font-size: 60vw;
+  color: var(--text);
+  line-height: 1;
+  transform-origin: center center;
+  transform: scaleY(0.05);
+  transition: 0.5s;
+}
+
+.people-11 {
+  position: absolute;
+  left: 30%;
+  top: 80%;
+  background-color: var(--text);
+  border-radius: 100%;
+  border: 10px solid var(--text);
+  z-index: 999;
+  transform: scaleY(1.5);
+}
+
+.eye-box:hover .eye {
+  transform: scaleY(0.5);
+}
+
+.swap-colors {
+  --bg: rgb(228, 56, 255);
+  --text: rgb(9, 103, 8);
+}
+
+@keyframes runningman {
+  0% {
+    left: 0;
+
+    bottom: 0;
+  }
+
+  25% {
+    left: 37vw;
+
+    bottom: 0;
+  }
+
+  50% {
+    left: 37vw;
+
+    bottom: 90vh;
+  }
+
+  75% {
+    left: 0;
+
+    bottom: 90vh;
+  }
+
+  100% {
+    left: 0;
+
+    bottom: 0;
+  }
+}
+
+@keyframes flyingman {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: 25vh;
+  }
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(TINY5x3-80.woff2);
+}
+
+@font-face {
+  font-family: myFont-1;
+  src: url(Velvelyne-Light.woff2);
+}
+
+@font-face {
+  font-family: myFont-2;
+  src: url(Velvelyne-Regular.woff2);
+}
