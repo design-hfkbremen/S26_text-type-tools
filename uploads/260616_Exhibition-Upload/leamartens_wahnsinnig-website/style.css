@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "MeineHelvetica";
+  src: url("helvetica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background: whitesmoke;
+}
+
+.poster {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.warp-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.wort-button {
+  position: absolute;
+  z-index: 10;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: "MeineHelvetica", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  color: black;
+  cursor: pointer;
+  transition:
+    opacity 0.45s ease,
+    filter 0.45s ease,
+    transform 0.45s ease,
+    letter-spacing 0.45s ease;
+}
+
+/* Breite Fenster: Laptop, Desktop, Vollbild */
+.wahn-button {
+  left: 25vw;
+  top: 36.5svh;
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  letter-spacing: 0;
+}
+
+.sinnig-button {
+  left: 56.4vw;
+  top: 95.5svh;
+  opacity: 0;
+  filter: blur(8px);
+  transform: scale(0.85) translateY(8px);
+  letter-spacing: 6px;
+  pointer-events: none;
+}
+
+.poster.ist-gewechselt .wahn-button {
+  opacity: 0;
+  filter: blur(8px);
+  transform: scale(1.25) translateY(-4px);
+  letter-spacing: 8px;
+  pointer-events: none;
+}
+
+.poster.ist-gewechselt .sinnig-button {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1) translateY(0);
+  letter-spacing: 0;
+  pointer-events: auto;
+}
+
+/* Schmale Fenster: Handy oder schmales Browserfenster */
+@media (max-aspect-ratio: 11 / 10) {
+  .wahn-button {
+    left: 15.2vw;
+    top: 30.8svh;
+  }
+
+  .sinnig-button {
+    left: 60vw;
+    top: 55.5svh;
+  }
+}

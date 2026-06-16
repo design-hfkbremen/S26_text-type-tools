@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Sagt dem Browser, dass Umlaute und Sonderzeichen richtig angezeigt werden -->
+    <meta charset="UTF-8" />
+
+    <!-- Sorgt dafür, dass die Seite auf Handy und Laptop richtig skaliert -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titel im Browser-Tab -->
+    <title>Wahnsinnig</title>
+
+    <!-- Verbindet diese HTML-Datei mit deiner CSS-Datei -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Der gesamte sichtbare Poster-Bereich -->
+    <div class="poster" id="poster">
+      <!-- Canvas ist eine Zeichenfläche. Hier werden SVG-Schrift und Smudge-Effekt gezeichnet. -->
+      <canvas class="warp-canvas" id="warp-canvas"></canvas>
+
+      <!-- Button für die erste Ansicht -->
+      <button class="wort-button wahn-button" id="wahn-button" type="button">
+        wahn
+      </button>
+
+      <!-- Button für die zweite Ansicht -->
+      <button
+        class="wort-button sinnig-button"
+        id="sinnig-button"
+        type="button"
+      >
+        sinnig
+      </button>
+    </div>
+
+    <script>
+      /* Holt die HTML-Elemente, damit JavaScript sie steuern kann. */
+      const poster = document.getElementById("poster");
+      const canvas = document.getElementById("warp-canvas");
+      const wahnButton = document.getElementById("wahn-button");
+      const sinnigButton = document.getElementById("sinnig-button");
+
+      /* Aktiviert WebGL auf dem Canvas. WebGL ist zuständig für den flüssigen Smudge-Effekt. */
+      const gl = canvas.getContext("webgl", {
+        alpha: true,
+        premultipliedAlpha: false,
+      });
+
+      /* Dieser kleine Shader erstellt eine große Fläche, auf die später alles gezeichnet wird. */
+      const vertexShaderSource = `
+        attribute vec2 a_position;
+        varying vec2 v_position;
+
+        void main() {
+          v_position = a_position;
+          gl_Position = vec4(a_position, 0.0, 1.0);
+        }
+      `;
+
+      /* Dieser Shader macht den eigentlichen Effekt:
+         Er zeichnet die SVG-Schrift und verzerrt sie dort, wo die Maus war. */
+      const fragmentShaderSource = `
+        precision mediump float;
+
+        varying vec2 v_position;
+
+        uniform vec2 u_resolution;
+        uniform vec4 u_imageRect;
+        uniform sampler2D u_texture1;
+        uniform sampler2D u_texture2;
+        uniform float u_mix;
+        uniform int u_count;
+        uniform vec4 u_points[16];
+        uniform vec2 u_velocity[16];
+
+        void main() {
+          vec2 pixel = (v_position * 0.5 + 0.5) * u_resolution;
+          pixel.y = u_resolution.y - pixel.y;
+
+          float bleed = 240.0;
+
+          vec4 bleedRect = vec4(
+            u_imageRect.x - bleed,
+            u_imageRect.y - bleed,
+            u_imageRect.z + bleed * 2.0,
+            u_imageRect.w + bleed * 2.0
+          );
+
+          vec2 bleedLocal = (pixel - bleedRect.xy) / bleedRect.zw;
+
+          if (
+            bleedLocal.x < 0.0 ||
+            bleedLocal.x > 1.0 ||
+            bleedLocal.y < 0.0 ||
+            bleedLocal.y > 1.0
+          ) {
+            discard;
+          }
+
+          vec2 local = (pixel - u_imageRect.xy) / u_imageRect.zw;
+
+          vec2 distortion = vec2(0.0);
+          float mask = 0.0;
+
+          for (int i = 0; i < 16; i++) {
+            if (i >= u_count) {
+              break;
+            }
+
+            vec2 point = u_points[i].xy;
+            float life = u_points[i].z;
+            float radius = u_points[i].w;
+            vec2 velocity = u_velocity[i];
+
+            vec2 delta = pixel - point;
+            float distance = length(delta);
+
+            float circle = exp(-(distance * distance) / (radius * radius));
+            float soft = circle * circle * life;
+
+            float speed = length(velocity);
+            vec2 direction = normalize(velocity + vec2(0.001));
+
+            distortion += direction * speed * soft * 0.7;
+            distortion += normalize(delta + vec2(0.001)) * soft * 2.4;
+
+            mask += soft;
+          }
+
+          mask = smoothstep(0.015, 0.45, mask);
+
+          vec2 normalUv = local;
+          vec2 offset = distortion / u_imageRect.zw;
+          vec2 smudgeUv = normalUv - offset;
+
+          vec4 normal1 = texture2D(u_texture1, normalUv);
+          vec4 normal2 = texture2D(u_texture2, normalUv);
+
+          vec4 smudge1 = texture2D(u_texture1, smudgeUv);
+          vec4 smudge2 = texture2D(u_texture2, smudgeUv);
+
+          vec4 normalImage = mix(normal1, normal2, u_mix);
+          vec4 smudgeImage = mix(smudge1, smudge2, u_mix);
+
+          if (
+            normalUv.x < 0.0 ||
+            normalUv.x > 1.0 ||
+            normalUv.y < 0.0 ||
+            normalUv.y > 1.0
+          ) {
+            normalImage = vec4(0.0);
+          }
+
+          if (
+            smudgeUv.x < 0.0 ||
+            smudgeUv.x > 1.0 ||
+            smudgeUv.y < 0.0 ||
+            smudgeUv.y > 1.0
+          ) {
+            smudgeImage = vec4(0.0);
+          }
+
+          vec4 color = mix(normalImage, smudgeImage, mask);
+
+          gl_FragColor = color;
+        }
+      `;
+
+      /* Erstellt einen Shader aus dem Text oben. */
+      function createShader(type, source) {
+        const shader = gl.createShader(type);
+
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+
+        /* Falls der Shader einen Fehler hat, wird er in der Konsole angezeigt. */
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+          console.error(gl.getShaderInfoLog(shader));
+        }
+
+        return shader;
+      }
+
+      /* Verbindet den Vertex Shader und den Fragment Shader zu einem WebGL-Programm. */
+      function createProgram() {
+        const vertexShader = createShader(gl.VERTEX_SHADER, vertexShaderSource);
+        const fragmentShader = createShader(
+          gl.FRAGMENT_SHADER,
+          fragmentShaderSource,
+        );
+
+        const program = gl.createProgram();
+
+        gl.attachShader(program, vertexShader);
+        gl.attachShader(program, fragmentShader);
+        gl.linkProgram(program);
+
+        /* Falls das Programm nicht verbunden werden kann, erscheint ein Fehler. */
+        if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+          console.error(gl.getProgramInfoLog(program));
+        }
+
+        return program;
+      }
+
+      /* Lädt eine SVG-Datei, damit sie später im Canvas gezeichnet werden kann. */
+      async function loadSvgImage(src) {
+        const response = await fetch(src);
+        let svgText = await response.text();
+
+        /* Liest die Größe der SVG aus dem viewBox-Wert aus. */
+        const viewBoxMatch = svgText.match(/viewBox="([^"]+)"/);
+        let width = 1200;
+        let height = 740;
+
+        if (viewBoxMatch) {
+          const values = viewBoxMatch[1].split(/\s+/).map(Number);
+          width = values[2];
+          height = values[3];
+        }
+
+        /* Gibt der SVG eine echte Breite und Höhe, damit WebGL sie korrekt laden kann. */
+        svgText = svgText.replace(
+          "<svg",
+          '<svg width="' + width + '" height="' + height + '"',
+        );
+
+        /* Macht aus dem SVG-Text eine Bilddatei im Browser. */
+        const blob = new Blob([svgText], {
+          type: "image/svg+xml",
+        });
+
+        const url = URL.createObjectURL(blob);
+
+        return new Promise(function (resolve) {
+          const image = new Image();
+
+          image.onload = function () {
+            URL.revokeObjectURL(url);
+            resolve(image);
+          };
+
+          image.src = url;
+        });
+      }
+
+      /* Macht aus dem geladenen Bild eine WebGL-Textur.
+         Eine Textur ist ein Bild, das WebGL benutzen kann. */
+      function createTexture(image) {
+        const texture = gl.createTexture();
+
+        gl.bindTexture(gl.TEXTURE_2D, texture);
+
+        /* Wenn die Schrift auf dem Kopf steht, kann man hier false/true wechseln. */
+        gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+
+        gl.texImage2D(
+          gl.TEXTURE_2D,
+          0,
+          gl.RGBA,
+          gl.RGBA,
+          gl.UNSIGNED_BYTE,
+          image,
+        );
+
+        /* Diese Einstellungen sorgen dafür, dass die Textur weich und sauber skaliert. */
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+
+        return texture;
+      }
+
+      /* Startfunktion: Hier wird alles vorbereitet und die Animation gestartet. */
+      async function start() {
+        /* Lädt die beiden SVG-Zustände. */
+        const image1 = await loadSvgImage("wahnsinnig24.svg");
+        const image2 = await loadSvgImage("wahnsinnig25.svg");
+
+        /* Erstellt und aktiviert das WebGL-Programm. */
+        const program = createProgram();
+
+        gl.useProgram(program);
+
+        /* Erstellt eine große Fläche aus zwei Dreiecken.
+           Auf diese Fläche wird später die Schrift gezeichnet. */
+        const positionBuffer = gl.createBuffer();
+
+        gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
+        gl.bufferData(
+          gl.ARRAY_BUFFER,
+          new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]),
+          gl.STATIC_DRAW,
+        );
+
+        const positionLocation = gl.getAttribLocation(program, "a_position");
+
+        gl.enableVertexAttribArray(positionLocation);
+        gl.vertexAttribPointer(positionLocation, 2, gl.FLOAT, false, 0, 0);
+
+        /* Erstellt die zwei Texturen aus den beiden SVG-Bildern. */
+        const texture1 = createTexture(image1);
+        const texture2 = createTexture(image2);
+
+        /* Holt die Variablen aus dem Shader, damit JavaScript Werte dorthin schicken kann. */
+        const resolutionLocation = gl.getUniformLocation(
+          program,
+          "u_resolution",
+        );
+        const imageRectLocation = gl.getUniformLocation(program, "u_imageRect");
+        const mixLocation = gl.getUniformLocation(program, "u_mix");
+        const countLocation = gl.getUniformLocation(program, "u_count");
+        const pointsLocation = gl.getUniformLocation(program, "u_points");
+        const velocityLocation = gl.getUniformLocation(program, "u_velocity");
+
+        /* Sagt WebGL, welche Textur Nummer 0 und welche Textur Nummer 1 ist. */
+        gl.uniform1i(gl.getUniformLocation(program, "u_texture1"), 0);
+        gl.uniform1i(gl.getUniformLocation(program, "u_texture2"), 1);
+
+        gl.activeTexture(gl.TEXTURE0);
+        gl.bindTexture(gl.TEXTURE_2D, texture1);
+
+        gl.activeTexture(gl.TEXTURE1);
+        gl.bindTexture(gl.TEXTURE_2D, texture2);
+
+        /* In diesem Array werden die Mausspuren gespeichert. */
+        const spuren = [];
+
+        let lastMouse = null;
+        let letzterPunkt = 0;
+
+        /* Diese Werte steuern den Wechsel zwischen SVG 1 und SVG 2. */
+        let mixZiel = 0;
+        let mixSmooth = 0;
+
+        /* Passt den Canvas an die Größe des Browserfensters an. */
+        function resize() {
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+          canvas.width = window.innerWidth * dpr;
+          canvas.height = window.innerHeight * dpr;
+
+          canvas.style.width = window.innerWidth + "px";
+          canvas.style.height = window.innerHeight + "px";
+
+          gl.viewport(0, 0, canvas.width, canvas.height);
+        }
+
+        /* Wird bei Mausbewegung ausgeführt.
+           Speichert Position, Richtung und Geschwindigkeit der Maus. */
+        function addSpur(event) {
+          const now = performance.now();
+
+          /* Begrenzung: nicht zu viele Punkte speichern, sonst wird es langsamer. */
+          if (now - letzterPunkt < 16) {
+            return;
+          }
+
+          letzterPunkt = now;
+
+          const dpr = canvas.width / window.innerWidth;
+
+          const x = event.clientX * dpr;
+          const y = event.clientY * dpr;
+
+          const vx = lastMouse ? (event.clientX - lastMouse.x) * dpr : 0;
+          const vy = lastMouse ? (event.clientY - lastMouse.y) * dpr : 0;
+
+          lastMouse = {
+            x: event.clientX,
+            y: event.clientY,
+          };
+
+          const speed = Math.sqrt(vx * vx + vy * vy);
+
+          /* Wenn die Maus fast stillsteht, wird keine neue Spur gespeichert. */
+          if (speed < 1.1) {
+            return;
+          }
+
+          /* Neue Smudge-Spur hinzufügen. */
+          spuren.push({
+            x: x,
+            y: y,
+            vx: vx,
+            vy: vy,
+            start: now,
+
+            /* Wie lange der Smudge sichtbar bleibt. */
+            duration: 4200,
+
+            /* Wie groß der Smudge-Bereich ist. */
+            radius: 82 * dpr + Math.min(speed * 1.05, 52 * dpr),
+          });
+
+          /* Maximal 16 Spuren behalten, damit der Effekt flüssig bleibt. */
+          while (spuren.length > 16) {
+            spuren.shift();
+          }
+        }
+
+        /* Diese Funktion läuft immer wieder.
+           Sie zeichnet jedes Bild der Animation neu. */
+        function render() {
+          const now = performance.now();
+          const dpr = canvas.width / window.innerWidth;
+          const posterRect = poster.getBoundingClientRect();
+
+          /* Seitenverhältnis der SVG und des Bildschirms berechnen. */
+          const svgRatio = image1.width / image1.height;
+          const screenRatio = posterRect.width / posterRect.height;
+
+          let imageWidth;
+          let imageHeight;
+          let left;
+          let top;
+
+          /* Wenn das Fenster breit ist: Laptop, Desktop, Vollbild. */
+          if (screenRatio > 1.1) {
+            imageHeight = posterRect.height * 0.78 * dpr;
+            imageWidth = imageHeight * svgRatio;
+            left = (posterRect.width * dpr - imageWidth) * 0.5;
+            top = posterRect.height * 0.24 * dpr;
+          } else {
+            /* Wenn das Fenster schmal ist: Handy oder schmales Browserfenster. */
+            imageWidth = posterRect.width * dpr;
+            imageHeight = imageWidth / svgRatio;
+            left = 0;
+            top = posterRect.height * 0.26 * dpr;
+          }
+
+          const punkte = [];
+          const velocities = [];
+
+          /* Alte Smudge-Spuren werden langsam schwächer und irgendwann gelöscht. */
+          for (let i = spuren.length - 1; i >= 0; i--) {
+            const spur = spuren[i];
+            const progress = (now - spur.start) / spur.duration;
+
+            if (progress >= 1) {
+              spuren.splice(i, 1);
+              continue;
+            }
+
+            const life = 1 - progress;
+
+            /* Steuert, wie weich/langsam der Effekt verschwindet. */
+            const smoothLife = Math.pow(life, 0.65);
+
+            punkte.push(spur.x, spur.y, smoothLife, spur.radius);
+            velocities.push(spur.vx * smoothLife, spur.vy * smoothLife);
+          }
+
+          /* Der Shader erwartet immer Platz für 16 Punkte.
+             Fehlende Punkte werden mit unsichtbaren Dummy-Werten aufgefüllt. */
+          while (punkte.length < 16 * 4) {
+            punkte.push(0, 0, 0, 1);
+          }
+
+          while (velocities.length < 16 * 2) {
+            velocities.push(0, 0);
+          }
+
+          /* Macht den Wechsel zwischen den beiden SVGs weich. */
+          mixSmooth += (mixZiel - mixSmooth) * 0.08;
+
+          /* Canvas leeren. */
+          gl.clearColor(0, 0, 0, 0);
+          gl.clear(gl.COLOR_BUFFER_BIT);
+
+          /* Aktuelle Werte an den Shader schicken. */
+          gl.uniform2f(resolutionLocation, canvas.width, canvas.height);
+          gl.uniform4f(imageRectLocation, left, top, imageWidth, imageHeight);
+          gl.uniform1f(mixLocation, mixSmooth);
+          gl.uniform1i(countLocation, spuren.length);
+          gl.uniform4fv(pointsLocation, new Float32Array(punkte));
+          gl.uniform2fv(velocityLocation, new Float32Array(velocities));
+
+          /* Zeichnet die Fläche und damit die Schrift. */
+          gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+          /* Ruft render() beim nächsten Bildschirm-Frame wieder auf. */
+          requestAnimationFrame(render);
+        }
+
+        /* Wenn sich die Fenstergröße ändert, wird der Canvas angepasst. */
+        window.addEventListener("resize", resize);
+
+        /* Bei Mausbewegung wird eine Smudge-Spur erzeugt. */
+        poster.addEventListener("mousemove", addSpur);
+
+        /* Wenn die Maus rausgeht, wird die letzte Mausposition zurückgesetzt. */
+        poster.addEventListener("mouseleave", function () {
+          lastMouse = null;
+        });
+
+        /* Klick auf "wahn": Wechsel zur zweiten SVG. */
+        wahnButton.addEventListener("click", function () {
+          poster.classList.add("ist-gewechselt");
+          mixZiel = 1;
+        });
+
+        /* Klick auf "sinnig": Wechsel zurück zur ersten SVG. */
+        sinnigButton.addEventListener("click", function () {
+          poster.classList.remove("ist-gewechselt");
+          mixZiel = 0;
+        });
+
+        /* Am Ende wird alles gestartet. */
+        resize();
+        render();
+      }
+
+      /* Startet die ganze JavaScript-Logik. */
+      start();
+    </script>
+  </body>
+</html>
