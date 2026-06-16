@@ -1,0 +1,615 @@
+:root {
+    --font-size-variable: 1;
+}
+body {
+    background-color: #7900b5;
+    font-family: monospace, helvetica, sans-serif;
+    color: rgb(49, 170, 40);
+    font-size: calc(7px * var(--font-size-variable));
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);   
+     /* Format: horizontal | vertikal | unscharf | farbe */
+    top: 0px;
+    margin-left: 10px;
+}
+.buchstabe {
+    text-shadow: 3px 3px 3.5px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.buchstabe-O {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: feroniapi;
+    font-size: calc(16vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 8vw;
+    top: 79vw;
+}
+.buchstabe-D {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: bold 30vw monospace, menlo, sans-serif;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 39vw;
+    top: 16.5vw;
+}
+.buchstabe-e {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: PicNic;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 22vw;
+    top: 20vw;
+    padding: 0;
+}
+.buchstabe-P {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: pilowlava-atome;
+    font-size: calc(23vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 57vw;
+    top: 25vw;
+}
+.buchstabe-The {
+    transition: transform 1s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 30vw;
+    top: 30vw;
+}
+.buchstabe-beauty {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 25vw;
+    top: 45vw;
+}
+.buchstabe-of {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 63vw;
+    top: 45vw;
+}
+.buchstabe-Code {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 7vw;
+    top: 77vw;
+}
+.buchstabe-Typography {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 7vw;
+    top: 63vw;
+}
+.buchstabe-Code {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 42.2vw;
+    top: 81vw;
+}
+.buchstabe-and {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: LeMurmure;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 19.5vw;
+    top: 80vw;
+}
+.buchstabe-A {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: compagnon;
+    font-size: calc(18vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 40vw;
+    top: -2.5vw;
+}
+.buchstabe-C {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: feroniapi;
+    font-size: calc(5vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 20vw;
+    top: 58vw;
+}
+.buchstabe-H {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family:picnic;
+    font-size: calc(14vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 50vw;
+    top: 0vw;
+}
+.buchstabe-t {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: lemurmure;
+    font-size: calc(30vw * var(--font-size-variable));
+    color: rgb(49, 170, 40) ;
+    left: 33vw;
+    top: 3.5vw;
+}
+.buchstabe-d {  
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: picnic;
+    font-size: calc(27vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 7vw;
+    top: 30vw;
+}
+.buchstabe-q {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: interlope;
+    font-size: calc(26vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 54vw;
+    top: 1vw;
+}
+.buchstabe-p {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(25vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 65vw;
+    top: 54vw;
+}
+.buchstabe-s {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: monospace, helvetica, sans-serif;
+    font-size: calc(19vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 47vw;
+    top: 26vw;
+    padding: 0vw;
+}
+.buchstabe-S {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: compagnon;
+    font-size: calc(57vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 30vw;
+    top: 75vw;
+}
+.buchstabe-m {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: pilowlava-atome;
+    font-size: calc(25vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 13vw;
+    top: 91vw;
+}
+.buchstabe-L {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: soldates;
+    font-size: calc(20vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 59vw;
+    top: 46vw;
+}
+.buchstabe-w {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: lithops;
+    font-size: calc(17vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 8vw;
+    top: 114vw;
+}
+.buchstabe-c {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: pilowlava-atome;
+    font-size: calc(7vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 61vw;
+    top: 4vw;
+}
+.buchstabe-Z {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: calc(7vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 60vw;
+    top: 24vw;
+}
+.buchstabe-J {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: feroniapi;
+    font-size: calc(6vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 70vw;
+    top: -5vw;
+}
+.buchstabe-g {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: mess;
+    font-size: calc(13vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 24vw;
+    top: 118vw;
+}
+.buchstabe-n {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    font-family: soldates;
+    font-size: calc(6vw * var(--font-size-variable));
+    color: rgb(49, 170, 40);
+    left: 10vw;
+    top: 136vw;
+}
+.buchstabe-O:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-s:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-D:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-e:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-P:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-The:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-beauty:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-of:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-Code:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-A:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-C:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-H:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-t:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-S:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-d:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-q:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-p:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-m:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-L:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-w:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-c:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-Z:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-J:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-g:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-n:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-Typography:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+.buchstabe-Code:hover {
+    transform: scale(1.1) !important;
+    animation-play-state: paused;
+}
+/* Definition der Animation */
+@keyframes schweben {
+    0% {
+        transform: translateY(0); /* Startposition */
+    }
+    50% {
+        transform: translateY(-10px); /* Geht 20px nach oben */
+    }
+    100% {
+        transform: translateY(0); /* Geht wieder zurück */
+    }
+}
+.buchstabe-O {
+    animation-delay: 0s; /* Startet sofort */
+    animation-name: schweben;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-s {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-D {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-e {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-P {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;   
+}
+.buchstabe-The {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-beauty {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-of {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-Code {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-A {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-C {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-H {  
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-t {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-S {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-d {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-q {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-p {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-m {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-L {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-w {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-c {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-Z {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-J {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-g {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-n {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-Typography {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.buchstabe-Code {
+    animation-delay: 0s;
+    animation-name: schweben;
+    animation-duration: 4.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@font-face {
+  font-family: Interlope;
+  src: url(Interlope-Regular.woff);
+}
+@font-face {
+  font-family: Pilowlava;
+  src: url(Pilowlava-Regular.woff);
+}
+@font-face {
+  font-family: Feroniapi;
+  src: url(Feroniapi-MediumItalic.woff);
+}
+@font-face {
+  font-family: Mess;
+  src: url(Mess-Light_web.woff);
+}
+@font-face {
+  font-family: PicNic;
+  src: url(PicNic.woff);
+}
+@font-face {
+  font-family: Compagnon;
+  src: url(Compagnon-Bold.woff);
+}
+@font-face {
+  font-family: LeMurmure;
+  src: url(LeMurmure-Regular.woff);
+}
+@font-face {
+  font-family: pilowlava-atome;
+  src: url(Pilowlava-Atome.woff);
+}
+@font-face {
+  font-family: soldates;
+  src: url(Ouvrieres-soldates.woff);
+}
+@font-face {
+  font-family: lithops;
+  src: url(Lithops-Regular.woff);
+}
+
+#text-container {
+    position: absolute;
+    width: auto;
+    height: auto;
+    
+    /* verschieben von allem */
+    left: 1.7vw;
+    top: 10vw;
+    overflow: visible; /* Damit die Buchstaben außerhalb des Containers sichtbar sind */
+}
+
+
+@media(max-width: 600px) {  /*Position aufm handy*/
+    #text-container {
+        top: 17vw;
+        left: 7.5vw;
+    }
+}
+
