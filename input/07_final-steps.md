@@ -10,3 +10,6 @@
 ## Publish your Poster
 1. Connect VSCode and Github
 2. Publish Website via Github Pages
+
+Tutorial:
+https://www.youtube.com/watch?v=e5AwNU3Y2es
