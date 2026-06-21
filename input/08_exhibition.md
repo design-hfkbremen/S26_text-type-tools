@@ -28,4 +28,4 @@ see [Exhibition.md](https://github.com/design-hfkbremen/S26_text-type-tools/blob
 - Aufbau
     - iMac / Internet
 - Plotten?
-
+- Fix bugs
