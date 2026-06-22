@@ -63,3 +63,7 @@ Wie sieht algorithmische Gestaltung aus? Welche Tools prägen unsere Typografie?
 4. Organisation
    - Getränke & Snacks
    - Aufsichtsschichten
+
+## Aufbau- & Abbau-Plan
+- [Aufbau / To Dos](https://hfkbremen.sharepoint.com/:w:/s/S26BlockBTextTypeTools/IQCuB4gN3aAYQIgnKNyaJk2AAR9A3NUl2sVeNfz_Vi8JYac?e=NdZcQn)
+- [Abbau / Schichtplan](https://hfkbremen.sharepoint.com/:w:/s/S26BlockBTextTypeTools/IQDd3yNSecqGSrWFXTv-xDEMARdWIjsVtXnZoaqmOzNdIBQ?e=aLff5y)
