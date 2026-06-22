@@ -7,25 +7,5 @@
 - Colors (Sascha, Maite, Chang, etc.)
 
 ## To Dos
-see [Exhibition.md](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/exhibition.md)
-
-- Betreuungs-Slots
-- Lorraine > LEDs, bohren
-    - Internet > galerie flut
-    - Insta > Poster / Exhibition Stories
-- Kühlschrank
-- Podeste suchen
-    - Computer + Beamer
-    - Publikationen
-    - Podest für Fernseher zum Anlehnen
-- Screens
-    - USB Sticks
-    - mediaplayer testen
-    - Videos
-- Druck
-    - Flyer / QR Codes
-    - About-Text
-- Aufbau
-    - iMac / Internet
-- Plotten?
-- Fix bugs
+- [Aufbau / To Dos](https://hfkbremen.sharepoint.com/:w:/s/S26BlockBTextTypeTools/IQCuB4gN3aAYQIgnKNyaJk2AAR9A3NUl2sVeNfz_Vi8JYac?e=NdZcQn)
+- [Exhibition.md](https://github.com/design-hfkbremen/S26_text-type-tools/blob/main/exhibition.md)
