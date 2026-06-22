@@ -2,8 +2,6 @@
 ## Bug fixes
 - Josha > mobile
 - Marieke > upload typeface
-- Lea > load images
-- Sidney > index.html
 - Colors (Sascha, Maite, Chang, etc.)
 
 ## To Dos
