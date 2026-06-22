@@ -2,9 +2,9 @@
     --font-size-variable: 1;
 }
 body {
-    background-color: #7900b5;
+    background-color: #7f15b5;
     font-family: monospace, helvetica, sans-serif;
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     font-size: calc(7px * var(--font-size-variable));
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);   
      /* Format: horizontal | vertikal | unscharf | farbe */
@@ -22,7 +22,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: feroniapi;
     font-size: calc(16vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 8vw;
     top: 79vw;
 }
@@ -30,7 +30,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: bold 30vw monospace, menlo, sans-serif;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 39vw;
     top: 16.5vw;
 }
@@ -38,7 +38,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: PicNic;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 22vw;
     top: 20vw;
     padding: 0;
@@ -47,7 +47,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: pilowlava-atome;
     font-size: calc(23vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 57vw;
     top: 25vw;
 }
@@ -55,7 +55,7 @@ body {
     transition: transform 1s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 30vw;
     top: 30vw;
 }
@@ -63,7 +63,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 25vw;
     top: 45vw;
 }
@@ -71,7 +71,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 63vw;
     top: 45vw;
 }
@@ -79,7 +79,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 7vw;
     top: 77vw;
 }
@@ -87,7 +87,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 7vw;
     top: 63vw;
 }
@@ -95,7 +95,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 42.2vw;
     top: 81vw;
 }
@@ -103,7 +103,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: LeMurmure;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 19.5vw;
     top: 80vw;
 }
@@ -111,7 +111,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: compagnon;
     font-size: calc(18vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 40vw;
     top: -2.5vw;
 }
@@ -119,7 +119,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: feroniapi;
     font-size: calc(5vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 20vw;
     top: 58vw;
 }
@@ -127,7 +127,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family:picnic;
     font-size: calc(14vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 50vw;
     top: 0vw;
 }
@@ -135,7 +135,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: lemurmure;
     font-size: calc(30vw * var(--font-size-variable));
-    color: rgb(49, 170, 40) ;
+    color: rgb(73, 255, 60);
     left: 33vw;
     top: 3.5vw;
 }
@@ -143,7 +143,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: picnic;
     font-size: calc(27vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 7vw;
     top: 30vw;
 }
@@ -151,7 +151,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: interlope;
     font-size: calc(26vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 54vw;
     top: 1vw;
 }
@@ -159,7 +159,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: 'Courier New', Courier, monospace;
     font-size: calc(25vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 65vw;
     top: 54vw;
 }
@@ -167,7 +167,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: monospace, helvetica, sans-serif;
     font-size: calc(19vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 47vw;
     top: 26vw;
     padding: 0vw;
@@ -176,7 +176,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: compagnon;
     font-size: calc(57vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 30vw;
     top: 75vw;
 }
@@ -184,7 +184,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: pilowlava-atome;
     font-size: calc(25vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 13vw;
     top: 91vw;
 }
@@ -192,7 +192,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: soldates;
     font-size: calc(20vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 59vw;
     top: 46vw;
 }
@@ -200,7 +200,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: lithops;
     font-size: calc(17vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 8vw;
     top: 114vw;
 }
@@ -208,7 +208,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: pilowlava-atome;
     font-size: calc(7vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 61vw;
     top: 4vw;
 }
@@ -216,7 +216,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: calc(7vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 60vw;
     top: 24vw;
 }
@@ -224,7 +224,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: feroniapi;
     font-size: calc(6vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 70vw;
     top: -5vw;
 }
@@ -232,7 +232,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: mess;
     font-size: calc(13vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 24vw;
     top: 118vw;
 }
@@ -240,7 +240,7 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-family: soldates;
     font-size: calc(6vw * var(--font-size-variable));
-    color: rgb(49, 170, 40);
+    color: rgb(73, 255, 60);
     left: 10vw;
     top: 136vw;
 }
@@ -465,7 +465,7 @@ body {
 .buchstabe-d {
     animation-delay: 0s;
     animation-name: schweben;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -514,7 +514,7 @@ body {
 .buchstabe-Z {
     animation-delay: 0s;
     animation-name: schweben;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
