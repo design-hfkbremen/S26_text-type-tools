@@ -23,11 +23,26 @@
 
 ## Foundries
 - [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
+- [Grilli Type](https://www.grillitype.com/)
+- [HAL Typefaces]
+- [Céline Hurka](https://celine-hurka.com)
 - [Kyiv Type Foundry](https://kyivtypefoundry.com/)
-- HAL Typefaces
-- Céline Hurka
-- etc.
-- [add list of type foundries]
+- [Comma Type](https://commatype.com/)
+- [Charlotte Rohde](https://charlotterohde.de/)
+- [Klim Type](https://klim.co.nz/)
+- [Blaze Type](https://blazetype.eu/)
+- [Camelot](https://camelot-typefaces.com/)
+- [Commercial Type](https://commercialtype.com/)
+- [Gruppe Due](https://gruppo-due.com/typefaces/)
+- [BB Bureau](https://www.bb-bureau.fr/)
+- [Lineto](https://lineto.com/typefaces)
+- [Neubauladen](https://neubauladen.com/)
+- [OPS Type](https://ops-type.com/)
+- [All Caps Type](https://www.allcapstype.com/typefaces)
+- [General Type Studio](https://www.generaltypestudio.com/)
+- [Outline Online](https://www.outline-online.com/)
+- see [Typewolf’s Foundry References](https://www.typewolf.com/resources#:~:text=Foundries%20%26%20Type%20Designers)
+- ...
 
 ## Inspiration
 - [https://100-beste-plakate.de/plakate/](https://100-beste-plakate.de/plakate/)
@@ -38,6 +53,10 @@
 - [https://www.instagram.com/loadmo.re/](https://www.instagram.com/loadmo.re/)
 
 ## Tools
+### Colors
+- [Wada Sanzo | A Dictionary of Color Combinations](https://sanzo-wada.dmbk.io)
+- [Coolors](https://coolors.co)
+
 ### InDesign
 - [Character & Paragraph Styles](https://www.youtube.com/watch?v=KfY8_pbla2o)
 
