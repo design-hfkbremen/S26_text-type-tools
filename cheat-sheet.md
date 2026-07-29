@@ -18,8 +18,15 @@
 - [Libre fonts by womxn](https://www.design-research.be/by-womxn/)
 - [FlinType](https://www.instagram.com/flint_ype)
 - [Velvetyne](https://velvetyne.fr/)
-- [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
 - [Use & Modify -> Free open source fonts](https://usemodify.com)
+- [Cat Fonts](https://www.peter-wiegel.de/Fonts/index.html)
+
+## Foundries
+- [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
+- [Kyiv Type Foundry](https://kyivtypefoundry.com/)
+- HAL Typefaces
+- Céline Hurka
+- etc.
 - [add list of type foundries]
 
 ## Inspiration
