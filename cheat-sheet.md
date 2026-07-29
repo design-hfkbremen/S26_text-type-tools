@@ -24,7 +24,7 @@
 ## Foundries
 - [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
 - [Grilli Type](https://www.grillitype.com/)
-- [HAL Typefaces]
+- [HAL Typefaces](https://haltypefaces.com/)
 - [Céline Hurka](https://celine-hurka.com)
 - [Kyiv Type Foundry](https://kyivtypefoundry.com/)
 - [Comma Type](https://commatype.com/)
