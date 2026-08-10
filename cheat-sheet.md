@@ -20,6 +20,7 @@
 - [Velvetyne](https://velvetyne.fr/)
 - [Use & Modify -> Free open source fonts](https://usemodify.com)
 - [Cat Fonts](https://www.peter-wiegel.de/Fonts/index.html)
+- [6TM](https://shop.6tm-magazine.com/)
 
 ## Foundries
 - [ABC Dinamo trial fonts](https://abcdinamo.com/form/request-trial-fonts)
