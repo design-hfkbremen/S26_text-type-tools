@@ -54,6 +54,10 @@
 - [https://www.instagram.com/loadmo.re/](https://www.instagram.com/loadmo.re/)
 
 ## Tools
+### Web-based 
+- [Mod-Lab](https://www.mod-lab.org/)
+- [Alvin Ashiatey’s list](https://www.are.na/alvin-ashiatey/tools-kwijylfcvqq)
+
 ### Colors
 - [Wada Sanzo | A Dictionary of Color Combinations](https://sanzo-wada.dmbk.io)
 - [Coolors](https://coolors.co)
@@ -66,10 +70,6 @@
 - [VS Code Shortcuts](https://www.youtube.com/watch?v=My0o3k5hjyI)
 - Plugin: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - Plugin: [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) ([Prettier Tutorial](https://www.youtube.com/watch?v=drtxWx1XojI))
-
-### Collections
-- [Mod-Lab](https://www.mod-lab.org/)
-- [Alvin Ashiatey’s list](https://www.are.na/alvin-ashiatey/tools-kwijylfcvqq)
 
 ## Code
 
