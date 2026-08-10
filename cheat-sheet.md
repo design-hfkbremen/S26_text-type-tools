@@ -54,7 +54,7 @@
 - [https://www.instagram.com/loadmo.re/](https://www.instagram.com/loadmo.re/)
 
 ## Tools
-### Web-based 
+### Collections of tools
 - [Mod-Lab](https://www.mod-lab.org/)
 - [Alvin Ashiatey’s list](https://www.are.na/alvin-ashiatey/tools-kwijylfcvqq)
 
